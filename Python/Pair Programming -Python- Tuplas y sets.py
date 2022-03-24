@@ -17,7 +17,7 @@ jugador1 = input()
 coor = jugador1
 coor = tuple(int((num)-1 for num in coor.split(",")))
 
-# Actualizar tablero
+# Actualizar tablero (siguiente paso)
 
 # Imprimir tablero
 
