@@ -2,7 +2,7 @@ import math
 import random
 
 # Variables numéricas
-lim_superior = 12
+lim_superior = 2
 lim_inferior = 1
 
 
@@ -36,8 +36,12 @@ while intentos < intentosMaximos:
         else:
             print("El numero que has elegido es mas alto que el numero secreto")
         intentos = intentos + 1
-        print("Intento:", intentos)
+        print("Intento", intentos, ":")
         intentoUsuaria = int(input())
+        if intentos == intentosMaximos:
+            if int(intentoUsuaria) == numero_secreto:
+                print("¡Enhorabuena has acertado!")
+                break     
         
     
 # Fin del juego
