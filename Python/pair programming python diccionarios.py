@@ -22,9 +22,9 @@ word_list = words[categorias_str]
 word_secreta = random.randint(0, len(word_list)-1)
 
 # Adivinar una palabra
-print("Adivina la palabra de la categoria elegida")
-palabra_elegida = input("Escribe la palabra que creas que es ")
-print(palabra_elegida)
+print("Adivina la palabra de la categoria elegida, escribela")
+palabra_elegida = input()
+print("Has elegido: ", palabra_elegida)
 
 # Era la palabra aleatoria?
 print("¿Era la palabra que buscabamos?")
