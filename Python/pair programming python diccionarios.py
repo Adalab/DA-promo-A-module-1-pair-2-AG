@@ -14,11 +14,12 @@ print("Elige una categoria de las siguientes, usando el numero")
 categorias = int(input('1:Colors,' '2:Shapes,' '3:Fruits,' '4:Animals '))
 print("Has elegido la categoria", categorias)
 
-# El ordenador elige una palabra de la categoria
+# El ordenador calcula la categoria a partir del inpout numerico del usuario
 lista_claves = list(words.keys())
-categorias_str = lista_claves[categorias - 1]
+nombre_categoria = lista_claves[categorias - 1]
 
-word_list = words[categorias_str]
+# El ordenador elige una palabra de la categoria
+word_list = words[nombre_categoria]
 word_secreta = random.randint(0, len(word_list)-1)
 
 # Adivinar una palabra
