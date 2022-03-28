@@ -32,4 +32,4 @@ INNER JOIN customers
 WHERE country = 'UK'
 GROUP BY company_name ;
 
--- Ejercicio 5
+
