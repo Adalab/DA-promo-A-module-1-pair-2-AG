@@ -14,18 +14,22 @@ FROM orders
 WHERE ship_country = "UK";
 
 /*Ejercicio 4*/
-SELECT ProductID, UnitPrice
-FROM products
-WHERE UnitPrice >= 28.87
-ORDER BY UnitPrice DESC ;
+SELECT AVG(unit_price)
+FROM products;
 
-/*Ejercicio5*/
-SELECT SUM(Discontinued)
+SELECT product_id, unit_price
+FROM products
+WHERE unit_price >= 28.87
+ORDER BY unit_price DESC;
+
+/*Ejercicio 5*/
+SELECT discontinued, product_id
 FROM products 
-WHERE Discontinued = 1 ;
+GROUP BY product_id;
 
 /*Ejercicio 6*/
-SELECT ProductName, ProductID, Discontinued
+SELECT product_name, product_id, discontinued
 FROM products
-ORDER BY ProductID DESC
+WHERE discontinued = 0
+ORDER BY product_id DESC
 LIMIT 10 ;
