@@ -14,7 +14,7 @@ print("Elige una categoria de las siguientes, usando el numero")
 categorias = int(input('1:Colors,' '2:Shapes,' '3:Fruits,' '4:Animals '))
 print("Has elegido la categoria", categorias)
 
-# El ordenador calcula la categoria a partir del inpout numerico del usuario
+# El ordenador calcula la categoria a partir del input numerico del usuario
 lista_claves = list(words.keys())
 nombre_categoria = lista_claves[categorias - 1]
 

@@ -11,11 +11,8 @@ intentos_permitidos = round(math.log(lim_superior - lim_inferior + 1.2))
 numero_secreto = random.randint(lim_inferior,lim_superior)
 
 # Inicio del juego
-x = "Bienvenidos al oraculo"
-print(x)
-
-y = "A ver si puedes adivinar el numero del 1 al 6"
-print(y)
+print("Bienvenidos al oraculo")
+print("A ver si puedes adivinar el numero del 1 al 6")
 
 # Adivinar 1 intento
 print("Intento 1:" + input())

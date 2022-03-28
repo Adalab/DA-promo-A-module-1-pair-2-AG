@@ -1,7 +1,7 @@
 import random
 
-x = "Bienvenidos al oraculo"
-print(x)
+#Inicio 
+print("Bienvenidos al oraculo")
 
 #Cadenas fijas de texto
 str_input = "Escribe una lista de seis numeros: " 
