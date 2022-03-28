@@ -1,17 +1,17 @@
 USE northwind;
 
 /*Ejercicio 1*/
-SELECT MIN(Unitprice) AS lowestPrice, MAX(Unitprice) AS highestPrice
-FROM products ;
+SELECT MAX(unit_price) AS highestPrice, MIN(unit_price) AS lowestPrices
+FROM products;
 
 /*Ejercicio 2*/
-SELECT SUM(ProductID), AVG(UnitPrice)
-FROM products ;
+SELECT AVG(unit_price) AS precio_medio, COUNT(product_id)
+FROM products;
 
 /*Ejercicio 3*/
-SELECT MAX(Freight), MIN(Freight)
+SELECT MAX(freight) AS max_carga, MIN(freight) AS min_carga, ship_country
 FROM orders
-WHERE ShipCountry = "UK" ; 
+WHERE ship_country = "UK";
 
 /*Ejercicio 4*/
 SELECT ProductID, UnitPrice
